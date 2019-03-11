@@ -1,3 +1,18 @@
 body {
-    background-color: cornsilk;
+    background-color: ivory;
+}
+
+header > h1 {
+    font-family: "Vollkorn";
+    color: firebrick;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0px;
+    height: 60px;
+}
+
+header > p {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
 }
