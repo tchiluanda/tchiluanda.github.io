@@ -29,7 +29,7 @@ header > p {
 }
 
 .apresentacao {
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Source Sans Pro";
