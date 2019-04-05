@@ -18,39 +18,58 @@
         <p>(tudo junto)</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href=""></a> O que somos</li>
-            <li>O que fazemos</li>
-            <li>Quem somos</li>
-        </ul>
-    </nav>
+    <div class="radio-tabs">
 
-    <main>
-        <div class="apresentacao">
-            <p>Acreditamos em <em>desafiar o status quo</em>.</p>
-            <p>Nós acreditamos em pensar diferente.</p>
-            <p>A forma como desafiamos o status quo é tratando os dados do governo, as informações fiscais, de maneira menos sisuda, <em>menos chata</em>, mas com muita <em>consistência e coerência</em>. Informação bem fundamentada, de fácil utilização (interface amigável) e projetada para gerar <em>empatia</em> (e consequentemente uma melhor compreensão).</p>
-            <p>Desenvolvemos histórias <em>cativantes</em> e aplicações para a internet que desvendam as finanças públicas nacionais, utilizando conceitos <em>visuais</em> para uma abordagem mais amigável.</p>
-            <p>Quer ver?</p>
+        <input class="estado" type="radio" name="opcao-estado" id="acreditamos" checked />
+        <input class="estado" type="radio" name="opcao-estado" id="fazemos" />
+        <input class="estado" type="radio" name="opcao-estado" id="somos" />
+        <input class="estado" type="radio" name="opcao-estado" id="misc" />
+
+        <nav>
+            <div class="tabs">
+                <label for="acreditamos" id="tab-acreditamos" class="tab">No que acreditamos</label>
+                <label for="fazemos" id="tab-fazemos" class="tab">O que fazemos</label>
+                <label for="somos" id="tab-somos" class="tab">Quem somos</label>
+                <label for="misc" id="tab-misc" class="tab">Blog, apresentações y otras cositas</label>
+            </div>
+        </nav>
+
+
+        <div class="paineis">
+            <div id="painel-acreditamos" class="painel active">
+                <p>Acreditamos em <em>desafiar o status quo</em>.</p>
+                <p>Nós acreditamos em pensar diferente.</p>
+                <p>A forma como desafiamos o status quo é tratando os dados do governo, as informações fiscais, de maneira menos sisuda, <em>menos chata</em>, mas com muita <em>consistência e coerência</em>. Informação bem fundamentada, de fácil utilização (interface amigável) e projetada para gerar <em>empatia</em> (e consequentemente uma melhor compreensão).</p>
+                <p>Desenvolvemos histórias <em>cativantes</em> e aplicações para a internet que desvendam as finanças públicas nacionais, utilizando conceitos <em>visuais</em> para uma abordagem mais amigável.</p>
+                <p>Quer ver?</p>
+            </div>
+
+            <div id="painel-fazemos" class="painel">
+                <p class="vermelho ressig">Ressignifica o RTN</p>
+                <img class="vermelho ressig" src=".\img\rtn.png" alt="">
+
+                <p class="azul fluxo-rec">A aplicação das receitas em despesas</p>
+                <img class="azul fluxo-rec" src=".\img\rec_desp.png" alt="">
+
+                <p class="amarelo bspn">BSPN</p>
+                <img class="amarelo bspn" src=".\img\bspn.png" alt="">
+
+                <p class="vermelho entende">Entendendo os gráficos dinâmicos</p>
+                <img class="vermelho entende" src=".\img\entendendo.png" alt="">
+
+                <p class="azul divida">Dívidas pra que te quero</p>
+                <img class="azul divida" src=".\img\divida.png" alt="">
+            </div>
+
+            <div id="painel-somos" class="painel">
+                <p>tsa</p>
+            </div>
+
+            <div id="painel-misc" class="painel">
+                <p>em breve</p>
+            </div>
         </div>
+    </div>
 
-        <div class="envelope-do-grid">
-            <p class="vermelho ressig">Ressignifica o RTN</p>
-            <img class="vermelho ressig" src=".\img\rtn.png" alt="">
-
-            <p class="azul fluxo-rec">A aplicação das receitas em despesas</p>
-            <img class="azul fluxo-rec" src=".\img\rec_desp.png" alt="">
-
-            <p class="amarelo bspn">BSPN</p>
-            <img class="amarelo bspn" src=".\img\bspn.png" alt="">
-
-            <p class="vermelho entende">Entendendo os gráficos dinâmicos</p>
-            <img class="vermelho entende" src=".\img\entendendo.png" alt="">
-
-            <p class="azul divida">Dívidas pra que te quero</p>
-            <img class="azul divida" src=".\img\divida.png" alt="">
-        </div>
-    </main>
 </body>
 </html>

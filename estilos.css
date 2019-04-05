@@ -27,16 +27,80 @@ header > p {
     font-size: 25px;
     font-family: "Fira Sans";
     color: dimgray;
+    margin-bottom: 5px;
     
 }
 
-nav > ul {
+/* radio */
+
+nav {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    align-content: center;
 }
 
-.apresentacao {
+.radio-tabs .estado {
+    display: none;
+}
+
+.radio-tabs .tabs {
+    display: inline-block;
+    font-family: "Fira Sans";
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 1em;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: rgb(50,156,50);*/
+    cursor: hand;
+    cursor: pointer;
+}
+
+.radio-tabs .tab:hover {
+    border-bottom: 5px solid rgb(255,213,0);
+    color: rgb(255,213,0)
+}
+
+.radio-tabs .tabs .tab {
+    padding: 0.4em 0.5em;
+}
+
+.radio-tabs .painel {
+    display: none;
+}
+
+#acreditamos:checked ~ nav .tabs #tab-acreditamos,
+#fazemos:checked ~ nav .tabs #tab-fazemos,
+#somos:checked ~ nav .tabs #tab-somos,
+#misc:checked ~ nav .tabs #tab-misc {
+    border-bottom: 5px solid rgb(50,156,50);
+    color: rgb(50,156,50);
+}
+
+#acreditamos:checked ~ .paineis #painel-acreditamos,
+#somos:checked ~ .paineis #painel-somos,
+#misc:checked ~ .paineis #painel-misc {
+    display: block;
+}
+
+#fazemos:checked ~ .paineis #painel-fazemos {
+    display: grid;
+    width: 580px;
+    max-width: 600px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template: 
+    "ressig-texto ressig-img fluxo-rec-img ."
+    ". bspn-texto fluxo-rec-texto entende-img"
+    "divida-texto bspn-img . entende-texto"
+    "divida-img . . .";
+    margin-left: auto;
+    margin-right: auto;
+    /*justify-items: "center";
+    align-items: "center";*/
+}
+
+#painel-acreditamos {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -49,12 +113,12 @@ nav > ul {
     margin-bottom: 25px;
 }
 
-.apresentacao > p {
+#painel-acreditamos > p {
     margin-left: auto;
     margin-right: auto;
 }
 
-.apresentacao em {
+#painel-acreditamos em {
     background-color: rgb(255, 213, 0);
     font-style: normal;
 }
@@ -78,35 +142,19 @@ nav > ul {
 }
 
 /* isso aqui foi fundamental pro grid ficar certinho.. :/ as imagens lascam tudo. */
-.envelope-do-grid img {
+#painel-fazemos img {
     width: 125px;
     height: 125px;
 }
 
-.envelope-do-grid > p {
+#painel-fazemos > p {
     font-family: 'Fredoka One';
     font-size: 20px;
 }
 
-.envelope-do-grid > * {
+#painel-fazemos > * {
     margin: 0;
     padding: 0;
-}
-
-.envelope-do-grid {
-    display: grid;
-    width: 580px;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template: 
-    "ressig-texto ressig-img fluxo-rec-img ."
-    ". bspn-texto fluxo-rec-texto entende-img"
-    "divida-texto bspn-img . entende-texto"
-    "divida-img . . .";
-    margin-left: auto;
-    margin-right: auto;
-    /*justify-items: "center";
-    align-items: "center";*/
 }
 
 p.ressig {
