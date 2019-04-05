@@ -48,6 +48,7 @@ nav {
     font-size: 0.8em;
     font-weight: bold;
     padding: 1em;
+    margin-bottom: 20px;
     vertical-align: top;
     margin-left: auto;
     margin-right: auto;
@@ -104,7 +105,8 @@ nav {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Source Sans Pro";
+    font-family: "Fira Sans";
+    font-weight: bold;
     line-height: 1.4;
     color: #777;
     /*border: 1px solid firebrick;*/
