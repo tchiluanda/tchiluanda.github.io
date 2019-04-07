@@ -80,13 +80,14 @@ nav {
 
 #acreditamos:checked ~ .paineis #painel-acreditamos,
 #somos:checked ~ .paineis #painel-somos,
-#misc:checked ~ .paineis #painel-misc {
+#misc:checked ~ .paineis #painel-misc,
+#fazemos:checked ~ .paineis #painel-fazemos {
     display: block;
 }
 
-#fazemos:checked ~ .paineis #painel-fazemos {
+#container-do-grid {
     display: grid;
-    width: 580px;
+    width: 600px;
     max-width: 600px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
@@ -101,7 +102,7 @@ nav {
     align-items: "center";*/
 }
 
-#painel-acreditamos {
+#painel-acreditamos, #painel-somos, #painel-misc {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -144,17 +145,17 @@ nav {
 }
 
 /* isso aqui foi fundamental pro grid ficar certinho.. :/ as imagens lascam tudo. */
-#painel-fazemos img {
-    width: 125px;
-    height: 125px;
+#container-do-grid img {
+    width: 129px;
+    height: 129px;
 }
 
-#painel-fazemos > p {
+#container-do-grid > p {
     font-family: 'Fredoka One';
     font-size: 20px;
 }
 
-#painel-fazemos > * {
+#container-do-grid > * {
     margin: 0;
     padding: 0;
 }
@@ -197,4 +198,46 @@ p.divida {
 
 img.divida {
     grid-area: divida-img;
+}
+
+#painel-somos > .contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#painel-somos .cartao {
+    padding: 5px;
+    background-color: khaki;
+    margin: 5px;
+    flex: 0 0 275px;
+}
+
+#painel-somos .cartao > h3 {
+    margin: 3px 0px;
+}
+
+#painel-somos .cartao > p {
+    margin: 1px 0px;
+    font-size: 0.8em;
+}
+
+#painel-somos .cartao > address {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.7em;
+}
+
+#painel-somos .cartao > img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#painel-misc h3 span {
+    border-bottom: 4px solid rgb(255,213,0);
+    color: #444
+}
+
+#painel-misc p {
+    margin-left: 10px;
 }
