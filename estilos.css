@@ -156,6 +156,11 @@ nav {
     padding: 0;
 }
 
+#container-do-grid a {
+    text-decoration: none;
+    color: white;
+}
+
 p.ressig {
     grid-area: ressig-texto;
 }
@@ -245,7 +250,7 @@ img.divida {
 
 /* mobile */
 
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 630px)  {
 
     #container-do-grid {
         display: grid;
@@ -277,6 +282,11 @@ img.divida {
         flex: 0 0 40%;
         text-align: center;
         padding: 5% 3%;
+    }
+
+    .radio-tabs .tab:hover {
+        border-bottom: none;
+        color: rgb(255,213,0)
     }
 
     #acreditamos:checked ~ nav .tabs #tab-acreditamos,
