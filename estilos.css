@@ -2,10 +2,6 @@ html {
     box-sizing: border-box;
   }
 
-body {
-    /* background-color: ivory;*/
-}
-
 header > h1 {
     font-family: "Fredoka One";
     color: rgb(50,156,50);
