@@ -246,6 +246,7 @@ img.divida {
 #painel-misc a {
     box-shadow: inset 0em -0.3em rgb(255,213,0);
     text-decoration: none;
+    color: #555;
 }
 
 /* mobile */
