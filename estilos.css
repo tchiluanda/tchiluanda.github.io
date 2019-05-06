@@ -229,7 +229,14 @@ img.divida {
     font-size: 0.7em;
 }
 
-#painel-somos .cartao > img {
+#painel-somos a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#painel-somos img {
     display: inline-block;
     vertical-align: middle;
 }
