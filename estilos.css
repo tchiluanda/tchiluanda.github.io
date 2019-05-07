@@ -92,7 +92,7 @@ nav {
     ". bspn-texto fluxo-rec-texto entende-img"
     "divida-texto bspn-img . entende-texto"
     "divida-img gfsm-texto gfsm-img divida-num-texto"
-    ". . . divida-num-img";
+    ". bspn-interativo-img bspn-interativo-texto divida-num-img";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
@@ -216,6 +216,14 @@ p.divida-num {
 
 img.divida-num {
     grid-area: divida-num-img;
+}
+
+p.bspn-interativo {
+    grid-area: bspn-interativo-texto;
+}
+
+img.bspn-interativo {
+    grid-area: bspn-interativo-img;
 }
 
 #painel-somos > .contatos {
