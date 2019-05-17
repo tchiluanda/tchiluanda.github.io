@@ -85,14 +85,16 @@ nav {
     display: grid;
     width: 580px;
     max-width: 600px;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template: 
     "ressig-texto ressig-img fluxo-rec-img ."
     ". bspn-texto fluxo-rec-texto entende-img"
     "divida-texto bspn-img . entende-texto"
     "divida-img gfsm-texto gfsm-img divida-num-texto"
-    ". bspn-interativo-img bspn-interativo-texto divida-num-img";
+    "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
+    "peppa-texto . divida-estmun-img ."
+    ". . divida-estmun-texto .";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
@@ -226,6 +228,22 @@ img.bspn-interativo {
     grid-area: bspn-interativo-img;
 }
 
+p.peppa {
+    grid-area: peppa-texto;
+}
+
+img.peppa {
+    grid-area: peppa-img;
+}
+
+p.divida-estmun {
+    grid-area: divida-estmun-texto;
+}
+
+img.divida-estmun {
+    grid-area: divida-estmun-img;
+}
+
 #painel-somos > .contatos {
     display: flex;
     flex-wrap: wrap;
@@ -297,7 +315,10 @@ img.bspn-interativo {
         "entende-img entende-texto"
         "divida-texto divida-img"
         "gfsm-img gfsm-texto"
-        "divida-num-texto divida-num-img"; 
+        "divida-num-texto divida-num-img"
+        "bspn-interativo-img bspn-interativo-texto"
+        "peppa-texto peppa-img"
+        "divida-estmun-img divida-estmun-texto"; 
         margin-left: auto;
         margin-right: auto;
         /*justify-items: "center";
