@@ -4,7 +4,7 @@ html {
 
 header > h1 {
     font-family: "Fredoka One";
-    color: rgb(50,156,50);
+    color: rgb(213,142,51);
     text-align: center;
     font-size: 60px;
     margin-bottom: 0px;
@@ -14,7 +14,7 @@ header > h1 {
 }
 
 header > h1 > span {
-    color: rgb(255,213,0);
+    color: rgb(232,211,92);
 }
 
 header > p {
@@ -22,7 +22,7 @@ header > p {
     margin-top: 0px;
     font-size: 25px;
     font-family: "Fira Sans";
-    color: dimgray;
+    color: rgb(74,28,35);
     margin-bottom: 5px;
     
 }
@@ -48,14 +48,15 @@ nav {
     vertical-align: top;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: rgb(50,156,50);*/
+    /*background-color: rgb(213,142,51);*/
     cursor: hand;
     cursor: pointer;
+    color: rgb(74,28,35);
 }
 
 .radio-tabs .tab:hover {
-    border-bottom: 5px solid rgb(255,213,0);
-    color: rgb(255,213,0)
+    border-bottom: 5px solid rgb(232,211,92);
+    color: rgb(232,211,92)
 }
 
 .radio-tabs .tabs .tab {
@@ -70,8 +71,8 @@ nav {
 #fazemos:checked ~ nav .tabs #tab-fazemos,
 #somos:checked ~ nav .tabs #tab-somos,
 #misc:checked ~ nav .tabs #tab-misc {
-    border-bottom: 5px solid rgb(50,156,50);
-    color: rgb(50,156,50);
+    border-bottom: 5px solid rgb(213,142,51);
+    color: rgb(213,142,51);
 }
 
 #acreditamos:checked ~ .paineis #painel-acreditamos,
@@ -108,7 +109,7 @@ nav {
     font-family: "Fira Sans";
     font-weight: bold;
     line-height: 1.4;
-    color: #777;
+    color: rgb(74,28,35);
     /*border: 1px solid firebrick;*/
     background-color: cornsilk;
     padding: 25px;
@@ -121,26 +122,26 @@ nav {
 }
 
 #painel-acreditamos em {
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(232,211,92);
     font-style: normal;
 }
 
 .cor1 {
-    background-color: rgb(50,156,50);
-    border: 10px solid rgb(50,156,50);
+    background-color: rgb(213,142,51);
+    border: 10px solid rgb(213,142,51);
     color: ivory;
 }
 
 .cor3 {
-    background-color: rgb(0, 74, 147);
-    border: 10px solid rgb(0, 74, 147);
+    background-color: rgb(74,28,35);
+    border: 10px solid rgb(74,28,35);
     color: ivory;
 }
 
 .cor2 {
-    background-color: rgb(255,213,0);
-    border: 10px solid rgb(255,213,0);
-    color: ivory;
+    background-color: rgb(232,211,92);
+    border: 10px solid rgb(232,211,92);
+    color: rgb(74,28,35);
 }
 
 /* isso aqui foi fundamental pro grid ficar certinho.. :/ as imagens lascam tudo. */
@@ -161,7 +162,12 @@ nav {
 
 #container-do-grid a {
     text-decoration: none;
-    color: white;
+    color: ghostwhite;
+}
+
+#container-do-grid .cor2 a {
+    text-decoration: none;
+    color: rgb(74,28,35);
 }
 
 p.ressig {
@@ -252,7 +258,7 @@ img.divida-estmun {
 
 #painel-somos .cartao {
     padding: 5px;
-    background-color: khaki;
+    background-color: rgb(232,211,92);
     margin: 5px;
     flex: 0 0 275px;
 }
@@ -285,8 +291,8 @@ img.divida-estmun {
 }
 
 #painel-misc h3 span {
-    border-bottom: 4px solid rgb(50,156,50);
-    color: rgb(50,156,50)
+    border-bottom: 4px solid rgb(213,142,51);
+    color: rgb(213,142,51)
 }
 
 #painel-misc p {
@@ -294,9 +300,13 @@ img.divida-estmun {
 }
 
 #painel-misc a {
-    box-shadow: inset 0em -0.3em rgb(255,213,0);
+    box-shadow: inset 0em -0.3em rgb(232,211,92);
     text-decoration: none;
-    color: #555;
+    color: rgb(74,28,35);
+}
+
+#painel-misc em {
+    font-size: 0.9em;
 }
 
 /* mobile */
@@ -342,7 +352,7 @@ img.divida-estmun {
 
     .radio-tabs .tab:hover {
         border-bottom: none;
-        color: rgb(255,213,0)
+        color: rgb(232,211,92)
     }
 
     #acreditamos:checked ~ nav .tabs #tab-acreditamos,
@@ -350,7 +360,7 @@ img.divida-estmun {
     #somos:checked ~ nav .tabs #tab-somos,
     #misc:checked ~ nav .tabs #tab-misc {
         color: ghostwhite;
-        background-color: rgb(50,156,50);
+        background-color: rgb(213,142,51);
         border-bottom: none;
 }
 
