@@ -95,7 +95,8 @@ nav {
     "divida-img gfsm-texto gfsm-img divida-num-texto"
     "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
     "peppa-texto . divida-estmun-img ."
-    ". . divida-estmun-texto .";
+    ". clusters-img divida-estmun-texto ."
+    ". clusters-texto api-img api-texto";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
@@ -248,6 +249,22 @@ p.divida-estmun {
 
 img.divida-estmun {
     grid-area: divida-estmun-img;
+}
+
+p.clusters {
+    grid-area: clusters-texto;
+}
+
+img.clusters {
+    grid-area: clusters-img;
+}
+
+p.api {
+    grid-area: api-texto;
+}
+
+img.api {
+    grid-area: api-img;
 }
 
 #painel-somos > .contatos {
