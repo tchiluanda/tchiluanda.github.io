@@ -345,7 +345,9 @@ img.api {
         "divida-num-texto divida-num-img"
         "bspn-interativo-img bspn-interativo-texto"
         "peppa-texto peppa-img"
-        "divida-estmun-img divida-estmun-texto"; 
+        "divida-estmun-img divida-estmun-texto"
+        "clusters-texto api-img"
+        "clusters-img api-texto"; 
         margin-left: auto;
         margin-right: auto;
         /*justify-items: "center";
