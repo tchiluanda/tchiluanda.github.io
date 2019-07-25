@@ -94,8 +94,8 @@ nav {
     "divida-texto bspn-img . entende-texto"
     "divida-img gfsm-texto gfsm-img divida-num-texto"
     "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
-    "peppa-texto . divida-estmun-img ."
-    ". clusters-img divida-estmun-texto ."
+    "peppa-texto . divida-estmun-img dep-mun-texto"
+    ". clusters-img divida-estmun-texto dep-mun-img"
     ". clusters-texto api-img api-texto";
     margin-left: auto;
     margin-right: auto;
@@ -354,6 +354,7 @@ img.dep-mun {
         "bspn-interativo-img bspn-interativo-texto"
         "peppa-texto peppa-img"
         "divida-estmun-img divida-estmun-texto"
+        "dep-mun-texto dep-mun-img"
         "clusters-texto api-img"
         "clusters-img api-texto"; 
         margin-left: auto;
