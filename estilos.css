@@ -96,7 +96,8 @@ nav {
     "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
     "peppa-texto . divida-estmun-img dep-mun-texto"
     ". clusters-img divida-estmun-texto dep-mun-img"
-    ". clusters-texto api-img api-texto";
+    ". clusters-texto api-img api-texto"
+    "div-contratual-texto div-contratual-img . .";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
@@ -269,11 +270,18 @@ img.api {
 
 p.dep-mun {
     grid-area: dep-mun-texto;
-    font-size: 18px; /*só para caber no quadradinho*/
 }
 
 img.dep-mun {
     grid-area: dep-mun-img;
+}
+
+p.div-contratual {
+    grid-area: div-contratual-texto;
+}
+
+img.div-contratual {
+    grid-area: div-contratual-img;
 }
 
 #painel-somos > .contatos {
@@ -356,8 +364,9 @@ img.dep-mun {
         "peppa-texto peppa-img"
         "divida-estmun-img divida-estmun-texto"
         "dep-mun-texto dep-mun-img"
-        "clusters-texto api-img"
-        "clusters-img api-texto"; 
+        "api-img api-texto"
+        "clusters-texto clusters-img"
+        "div-contratual-img div-contratual-texto"; 
         margin-left: auto;
         margin-right: auto;
         /*justify-items: "center";
