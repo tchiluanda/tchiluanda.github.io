@@ -1,0 +1,7 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+[referencia](https://www.r-bloggers.com/how-to-build-animated-bar-plots-using-r/) 
+
