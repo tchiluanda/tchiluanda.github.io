@@ -267,6 +267,14 @@ img.api {
     grid-area: api-img;
 }
 
+p.dep-mun {
+    grid-area: dep-mun-texto;
+}
+
+img.dep-mun {
+    grid-area: dep-mun-img;
+}
+
 #painel-somos > .contatos {
     display: flex;
     flex-wrap: wrap;
