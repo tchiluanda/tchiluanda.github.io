@@ -94,10 +94,11 @@ nav {
     "divida-texto bspn-img . entende-texto"
     "divida-img gfsm-texto gfsm-img divida-num-texto"
     "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
-    "peppa-texto . divida-estmun-img dep-mun-texto"
-    ". clusters-img divida-estmun-texto dep-mun-img"
+    "peppa-texto . divida-estmun-img ."
+    ". clusters-img divida-estmun-texto ."
     ". clusters-texto api-img api-texto"
-    "div-contratual-texto div-contratual-img . .";
+    "div-contratual-texto div-contratual-img dep-mun-texto ."
+    ". . dep-mun-img .";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
