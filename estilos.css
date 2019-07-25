@@ -269,6 +269,7 @@ img.api {
 
 p.dep-mun {
     grid-area: dep-mun-texto;
+    font-size: 18px; /*só para caber no quadradinho*/
 }
 
 img.dep-mun {
