@@ -86,19 +86,20 @@ nav {
     display: grid;
     width: 580px;
     max-width: 600px;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template: 
-    "ressig-texto ressig-img fluxo-rec-img ."
-    ". bspn-texto fluxo-rec-texto entende-img"
-    "divida-texto bspn-img . entende-texto"
+    "ressig-texto ressig-img estatais-texto ."
+    ". bspn-texto estatais-img entende-texto"
+    "divida-texto bspn-img . entende-img"
     "divida-img gfsm-texto gfsm-img divida-num-texto"
     "peppa-img bspn-interativo-img bspn-interativo-texto divida-num-img"
     "peppa-texto . divida-estmun-img ."
     ". clusters-img divida-estmun-texto ."
     ". clusters-texto api-img api-texto"
     "div-contratual-texto div-contratual-img dep-mun-texto ."
-    ". . dep-mun-img .";
+    ". fluxo-rec-img dep-mun-img ."
+    ". fluxo-rec-texto . .";
     margin-left: auto;
     margin-right: auto;
     /*justify-items: "center";
@@ -180,6 +181,15 @@ p.ressig {
 img.ressig {
     grid-area: ressig-img;
 }
+
+p.estatais {
+    grid-area: estatais-texto;
+}
+
+img.estatais {
+    grid-area: estatais-img;
+}
+
 
 p.fluxo-rec {
     grid-area: fluxo-rec-texto;
@@ -355,6 +365,7 @@ img.div-contratual {
         grid-template-columns: repeat(2, 1fr);
         grid-template: 
         "ressig-texto ressig-img"
+        "estatais-img estatais-texto"
         "fluxo-rec-img bspn-texto"
         "fluxo-rec-texto bspn-img"
         "entende-img entende-texto"
