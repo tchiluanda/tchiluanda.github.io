@@ -67,6 +67,55 @@ nav {
     display: none;
 }
 
+#painel-fazemos #container-videos {
+    padding: 5px;
+    margin: 1em auto;
+    max-width: 300px;
+    background-color: cornsilk;
+    border-radius: 25px;
+    font-family: "Fira Sans";
+    font-weight: bold;
+}
+
+#painel-fazemos #container-videos h2 {
+    text-align: center;
+    color: rgb(74,28,35);
+    margin: 10px 0 0;
+    font-family: "Fredoka One";
+    font-weight: normal;
+}
+
+#painel-fazemos ul.envelope-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(213,142,51);
+    padding: 0;
+    margin-top: 0;
+
+}
+
+#painel-fazemos ul.envelope-flex li {
+    list-style: none;
+    text-align: center;
+    margin: 5px;
+}
+
+#painel-fazemos ul.envelope-flex li p {
+    margin-bottom: 5px;
+    font-size: 14px;
+
+}
+
+#painel-fazemos ul.envelope-flex li img {
+    width: 100%;
+    margin: 0;
+}
+
+#painel-fazemos ul.envelope-flex a {
+    text-decoration: none;
+}
+
 #acreditamos:checked ~ nav .tabs #tab-acreditamos,
 #fazemos:checked ~ nav .tabs #tab-fazemos,
 #somos:checked ~ nav .tabs #tab-somos,
@@ -367,8 +416,8 @@ img.div-contratual {
         "ressig-texto ressig-img"
         "estatais-img estatais-texto"
         "fluxo-rec-img bspn-texto"
-        "fluxo-rec-texto bspn-img"
         "entende-img entende-texto"
+        "fluxo-rec-texto bspn-img"
         "divida-texto divida-img"
         "gfsm-img gfsm-texto"
         "divida-num-texto divida-num-img"
