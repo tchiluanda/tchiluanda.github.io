@@ -476,3 +476,9 @@ img.div-contratual {
 
 
 }
+
+@supports not (display: grid) {
+    #container-do-grid {
+      display: block;
+    }
+  }
