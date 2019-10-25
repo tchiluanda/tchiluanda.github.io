@@ -134,9 +134,10 @@ nav {
     display: grid;
     width: 580px;
     max-width: 600px;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template: 
+    ". ideb-texto ideb-img ."
     "ressig-texto ressig-img estatais-texto ."
     ". bspn-texto estatais-img entende-texto"
     "divida-texto bspn-img . entende-img"
@@ -220,6 +221,16 @@ nav {
 #container-do-grid .cor2 a {
     text-decoration: none;
     color: rgb(74,28,35);
+}
+
+/* definições das áreas */
+
+p.ideb {
+    grid-area: ideb-texto;
+}
+
+img.ideb {
+    grid-area: ideb-img;
 }
 
 p.ressig {
@@ -412,6 +423,7 @@ img.div-contratual {
         grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template: 
+        "ideb-img ideb-texto"
         "ressig-texto ressig-img"
         "estatais-img estatais-texto"
         "fluxo-rec-img bspn-texto"
