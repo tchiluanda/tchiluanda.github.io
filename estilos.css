@@ -134,10 +134,11 @@ nav {
     display: grid;
     width: 580px;
     max-width: 600px;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template: 
-    ". ideb-texto ideb-img ."
+    "cron1-texto . . ."
+    "cron1-img ideb-texto ideb-img ."
     "ressig-texto ressig-img estatais-texto ."
     ". bspn-texto estatais-img entende-texto"
     "divida-texto bspn-img . entende-img"
@@ -224,6 +225,14 @@ nav {
 }
 
 /* definições das áreas */
+
+p.cron1 {
+    grid-area: cron1-texto;
+}
+
+img.cron1 {
+    grid-area: cron1-img;
+}
 
 p.ideb {
     grid-area: ideb-texto;
@@ -423,6 +432,7 @@ img.div-contratual {
         grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template: 
+        "cron1-texto cron1-img"
         "ideb-img ideb-texto"
         "ressig-texto ressig-img"
         "estatais-img estatais-texto"
