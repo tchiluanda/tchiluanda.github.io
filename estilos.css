@@ -134,11 +134,12 @@ nav {
     display: grid;
     width: 580px;
     max-width: 600px;
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: repeat(14, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template: 
-    "cron1-texto . . ."
-    "cron1-img ideb-texto ideb-img ."
+    ". painel-honras-texto garantias-img garantias-texto"
+    "cron1-texto painel-honras-img . honras-img"
+    "cron1-img ideb-texto ideb-img honras-texto"
     "ressig-texto ressig-img estatais-texto ."
     ". bspn-texto estatais-img entende-texto"
     "divida-texto bspn-img . entende-img"
@@ -225,6 +226,30 @@ nav {
 }
 
 /* definições das áreas */
+
+p.garantias {
+    grid-area: garantias-texto;
+}
+
+img.garantias {
+    grid-area: garantias-img;
+}
+
+p.honras {
+    grid-area: honras-texto;
+}
+
+img.honras {
+    grid-area: honras-img;
+}
+
+p.painel-honras {
+    grid-area: painel-honras-texto;
+}
+
+img.painel-honras {
+    grid-area: painel-honras-img;
+}
 
 p.cron1 {
     grid-area: cron1-texto;
@@ -432,6 +457,9 @@ img.div-contratual {
         grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template: 
+        "painel-honras-img painel-honras-texto"
+        "garantias-texto garantias-img"
+        "honras-img honras-texto"
         "cron1-texto cron1-img"
         "ideb-img ideb-texto"
         "ressig-texto ressig-img"
